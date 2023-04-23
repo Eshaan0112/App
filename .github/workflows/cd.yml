@@ -17,5 +17,5 @@ jobs:
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.TOKEN_GITHUB_NEW }}  # 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
+        github_token: ${{ secrets.TOKEN_GITHUB_NEW }}  
         publish_dir: ./Automated-Stock-Trader # or any other directory containing your buil tapp

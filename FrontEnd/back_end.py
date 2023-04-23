@@ -2,8 +2,8 @@
 import os
 import sys
 import time
-sys.path.append("../Backend")
-from trendFollowing import *
+# sys.path.append("../Backend")
+from BackEnd.trendFollowing import *
 # print('Installing Packages')
 # os.system('pip install -r requirements.txt')
 
