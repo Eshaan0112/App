@@ -12,6 +12,6 @@ sleep 10
 
 # Start the back-end server
 echo "STARTING BACK-END SERVER"
-echo "URL to start uploading: http://127.0.0.1:8080/display.html"
+echo "URL to start uploading: https://eshaan0112.github.io/App/display.html"
 python3 back_end.py
 

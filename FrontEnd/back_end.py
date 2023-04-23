@@ -54,7 +54,8 @@ if __name__ == "__main__":
     with open("config.json") as f:
         config = json.load(f)
 
-    port = config["port"]
+    # port = config["port"]
+    port = int(os.environ.get('PORT', 5000))
     print(f'App running on port {port}')
-    app.run(host='localhost', port=port)
+    app.run(host='0.0.0.0', port=port)
     
