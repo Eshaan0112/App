@@ -85,7 +85,11 @@ def main_trendFollowing(stockList):
     history = []
     OwnedStockList = []
     for j in stockList:
-        file = open('../test/%s.csv' % (j))
+        # Automated-Stock-Trader\test
+        print(type(j))
+        # file = open(f'Automated-Stock-Trader/test/{j}.csv' )
+        file = open(f'test/{j}.csv')
+        # Accessing the db
         intraday = pd.read_csv(file)
         actions = Trend(intraday, 0.02, 0.01, j)
         history += actions
